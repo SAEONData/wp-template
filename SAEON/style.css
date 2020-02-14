@@ -20,5 +20,44 @@ Use it to make something cool, have fun, and share what you've learned
 with others.
 */
 
+body,html{
+	padding:0;
+	margin:0;
+}
+/* Header START */
+#s-header{
+	position:fixed;
+	top:0;
+	background:#ffff;
+	width:100%;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 10px -15px;
+    z-index: 3;
+}
+/* Header END */
+
+/* Responsive structure START */
+.s-container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width: 992px){
+	.s-container {
+		width: 970px;
+	}
+}
+@media (min-width: 768px){
+	.s-container {
+		width: 750px;
+	}
+}
+@media (min-width: 1200px){
+	.s-container {
+		width: 1170px;
+	}
+}
+/* Responsive structure END */
+
 
 

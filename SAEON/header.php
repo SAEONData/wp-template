@@ -26,22 +26,18 @@
 
 	<body <?php body_class(); ?>>
 
-		<header id="site-header"  role="banner">
+		<header id="s-header"  role="banner">
 			<div class="s-container">
 				<div class="s-col">
-					<img src="" class="s-s-logo"/>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/s-s-logo.png" class="s-s-logo"/>
 				</div>
 				<div class="s-col">
-					<h1 class="s-title"><a href="#"><?php echo get_option('blogname');  ?></a></h1>
-					<span class="s-tagline"><?php echo get_option('blogdescription'); ?></a>
-					<img src="<?php echo get_theme_mod('s-logo'); ?>" class="s-logo"/>
-					
 
 					<?php
 						if ( get_theme_mod( 's-logo' ) ) {
-							echo 's-logo is a thing';
+							echo '<img src="'.get_theme_mod('s-logo').' ?>" class="s-logo"/>';
 						} else {
-							echo 's-neep';
+							echo '<h1 class="s-title"><a href="#">'. get_option('blogname').'</a></h1><span class="s-tagline">'. get_option('blogdescription').'</a>';
 						}
 					?>
 
